@@ -1,38 +1,42 @@
+def error(msgError):
+    print(f"Digite um(a) {msgError} valido(a)")
+
+
 
 while True:
     nome = input("Digite o seu nome maior que 3 caracteres: ")
     if len(nome) >= 3:
         break
 
-    print("Digite um nome válido")
+    error("nome")
 
 
 while True:
     idade = int(input("Digite o sua idade entre 0 a 150: "))
     if idade >= 0 and idade <= 150:
         break
-    print("Digite uma idade válida")
+    error("idade")
 
 
 while True:
     salario = int(input("Digite o seu salário maior que 0: ")) 
     if salario > 0:
         break
-    print("Digite um salário válido: ")
+    error("salario")
 
 
 while True:
     sexo = input("Digite o seu sexo 'f' ou 'm': ").lower()
     if sexo == "f" or sexo == "m":
         break
-    print("Digite um sexo válido")
+    error("sexo")
 
 
 while True:
     estado_civil = input("Digite o seu estado civil 's', 'c', 'v', 'd': ").lower()
     if estado_civil == "s" or estado_civil == "c" or estado_civil == "v" or estado_civil == "d":
         break
-    print("Digite um estado civil válido")
+    error("estado civil")
 
 
 print(nome)

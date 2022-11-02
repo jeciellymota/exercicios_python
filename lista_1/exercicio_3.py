@@ -3,7 +3,7 @@
 # calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
 
 arquivo = float(input("Qual o tamanho do arquivo em MB que você deseja calcular? "))
-velocidade = float(input("Qual a velocidade da ua internet em Mbps? "))
+velocidade = float(input("Qual a velocidade da sua internet em Mbps? "))
 temposeg = arquivo / (velocidade / 8)
 tempomin = temposeg / 60
 
